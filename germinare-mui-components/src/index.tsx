@@ -18,6 +18,7 @@ import TableRowEmptyComponent from './components/Table/TableBody/TableRowEmpty/t
 import TableEmptyComponent from './components/Table/TableEmpty/tableEmpty'
 import TableHeadComponent from './components/Table/TableHead/tableHead'
 import TableComponent from './components/Table/table'
+import GridComponent from './components/Grid'
 
 export {
   AccordionComponent,
@@ -41,4 +42,5 @@ export {
   TableEmptyComponent,
   TableHeadComponent,
   TableComponent,
+  GridComponent,
 }

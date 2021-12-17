@@ -3,16 +3,14 @@ import React from 'react'
 import { Grid } from '@mui/material'
 
 export interface IGridComponentProp {
-  value?: string
-  children?: any
   container?: boolean
   item?: boolean
-  direction: 	'column-reverse' | 'column' | 'row-reverse' | 'row'
-  xs: 'auto' | number | boolean
-  sm: 'auto' | number | boolean
-  md: 'auto' | number | boolean
-  lg: 'auto' | number | boolean
-  xl: 'auto' | number | boolean
+  direction?: 	'column-reverse' | 'column' | 'row-reverse' | 'row'
+  xs?: 'auto' | number | boolean
+  sm?: 'auto' | number | boolean
+  md?: 'auto' | number | boolean
+  lg?: 'auto' | number | boolean
+  xl?: 'auto' | number | boolean
 
 }
 

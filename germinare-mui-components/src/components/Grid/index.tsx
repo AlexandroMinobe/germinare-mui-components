@@ -1,8 +1,8 @@
 import React from 'react'
-
 import { Grid } from '@mui/material'
 
 export interface IGridComponentProp {
+  children: any
   container?: boolean
   item?: boolean
   direction?: 	'column-reverse' | 'column' | 'row-reverse' | 'row'
@@ -11,7 +11,8 @@ export interface IGridComponentProp {
   md?: 'auto' | number | boolean
   lg?: 'auto' | number | boolean
   xl?: 'auto' | number | boolean
-
+  columns?: number 
+  wrap?: 	'nowrap' | 'wrap-reverse' | 'wrap'
 }
 
 export default function GridComponent(
@@ -28,7 +29,10 @@ export default function GridComponent(
       md={props.md}
       lg={props.lg}
       xl={props.xl}
+      wrap={props.wrap}
+      columns={props.columns}
     >
+      {props.children}
     </Grid>
   )
 }
